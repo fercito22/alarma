@@ -1,0 +1,427 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'cordova',
+1 verbose cli   'plugin',
+1 verbose cli   'add',
+1 verbose cli   'org.apache.cordova.device-motion' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.2
+4 verbose install initial load of F:\Programacion\Ionic\motion\package.json
+5 warn package.json motion@1.1.1 No repository field.
+6 warn package.json motion@1.1.1 No README data
+7 warn package.json motion@1.1.1 No license field.
+8 verbose readDependencies loading dependencies from F:\Programacion\Ionic\motion\package.json
+9 silly cache add args [ 'cordova', null ]
+10 verbose cache add spec cordova
+11 silly cache add args [ 'plugin', null ]
+12 verbose cache add spec plugin
+13 silly cache add args [ 'add', null ]
+14 verbose cache add spec add
+15 silly cache add args [ 'org.apache.cordova.device-motion', null ]
+16 verbose cache add spec org.apache.cordova.device-motion
+17 silly cache add parsed spec Result {
+17 silly cache add   raw: 'cordova',
+17 silly cache add   scope: null,
+17 silly cache add   name: 'cordova',
+17 silly cache add   rawSpec: '',
+17 silly cache add   spec: '*',
+17 silly cache add   type: 'range' }
+18 silly addNamed cordova@*
+19 verbose addNamed "*" is a valid semver range for cordova
+20 silly addNameRange { name: 'cordova', range: '*', hasData: false }
+21 silly mapToRegistry name cordova
+22 silly mapToRegistry using default registry
+23 silly mapToRegistry registry https://registry.npmjs.org/
+24 silly mapToRegistry uri https://registry.npmjs.org/cordova
+25 verbose addNameRange registry:https://registry.npmjs.org/cordova not in flight; fetching
+26 silly cache add parsed spec Result {
+26 silly cache add   raw: 'plugin',
+26 silly cache add   scope: null,
+26 silly cache add   name: 'plugin',
+26 silly cache add   rawSpec: '',
+26 silly cache add   spec: '*',
+26 silly cache add   type: 'range' }
+27 silly addNamed plugin@*
+28 verbose addNamed "*" is a valid semver range for plugin
+29 silly addNameRange { name: 'plugin', range: '*', hasData: false }
+30 silly mapToRegistry name plugin
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry uri https://registry.npmjs.org/plugin
+34 verbose addNameRange registry:https://registry.npmjs.org/plugin not in flight; fetching
+35 silly cache add parsed spec Result {
+35 silly cache add   raw: 'add',
+35 silly cache add   scope: null,
+35 silly cache add   name: 'add',
+35 silly cache add   rawSpec: '',
+35 silly cache add   spec: '*',
+35 silly cache add   type: 'range' }
+36 silly addNamed add@*
+37 verbose addNamed "*" is a valid semver range for add
+38 silly addNameRange { name: 'add', range: '*', hasData: false }
+39 silly mapToRegistry name add
+40 silly mapToRegistry using default registry
+41 silly mapToRegistry registry https://registry.npmjs.org/
+42 silly mapToRegistry uri https://registry.npmjs.org/add
+43 verbose addNameRange registry:https://registry.npmjs.org/add not in flight; fetching
+44 silly cache add parsed spec Result {
+44 silly cache add   raw: 'org.apache.cordova.device-motion',
+44 silly cache add   scope: null,
+44 silly cache add   name: 'org.apache.cordova.device-motion',
+44 silly cache add   rawSpec: '',
+44 silly cache add   spec: '*',
+44 silly cache add   type: 'range' }
+45 silly addNamed org.apache.cordova.device-motion@*
+46 verbose addNamed "*" is a valid semver range for org.apache.cordova.device-motion
+47 silly addNameRange { name: 'org.apache.cordova.device-motion',
+47 silly addNameRange   range: '*',
+47 silly addNameRange   hasData: false }
+48 silly mapToRegistry name org.apache.cordova.device-motion
+49 silly mapToRegistry using default registry
+50 silly mapToRegistry registry https://registry.npmjs.org/
+51 silly mapToRegistry uri https://registry.npmjs.org/org.apache.cordova.device-motion
+52 verbose addNameRange registry:https://registry.npmjs.org/org.apache.cordova.device-motion not in flight; fetching
+53 verbose request uri https://registry.npmjs.org/org.apache.cordova.device-motion
+54 verbose request no auth needed
+55 info attempt registry request try #1 at 23:47:45
+56 verbose request id 07277ccb5bc2c6a7
+57 http request GET https://registry.npmjs.org/org.apache.cordova.device-motion
+58 verbose request uri https://registry.npmjs.org/add
+59 verbose request no auth needed
+60 info attempt registry request try #1 at 23:47:45
+61 verbose etag "6L0ATKRK62R1BGT51Z77BI172"
+62 http request GET https://registry.npmjs.org/add
+63 verbose request uri https://registry.npmjs.org/plugin
+64 verbose request no auth needed
+65 info attempt registry request try #1 at 23:47:45
+66 verbose etag "6JILABSB2GRNEIW5S61CEDKVJ"
+67 http request GET https://registry.npmjs.org/plugin
+68 verbose request uri https://registry.npmjs.org/cordova
+69 verbose request no auth needed
+70 info attempt registry request try #1 at 23:47:45
+71 verbose etag "7MA3JYS4VL1SJT5UVXRKJ6BLC"
+72 http request GET https://registry.npmjs.org/cordova
+73 http 304 https://registry.npmjs.org/add
+74 verbose headers { date: 'Thu, 19 Nov 2015 02:47:48 GMT',
+74 verbose headers   via: '1.1 varnish',
+74 verbose headers   'cache-control': 'max-age=60',
+74 verbose headers   etag: '"6L0ATKRK62R1BGT51Z77BI172"',
+74 verbose headers   age: '0',
+74 verbose headers   connection: 'keep-alive',
+74 verbose headers   'x-served-by': 'cache-dfw1828-DFW',
+74 verbose headers   'x-cache': 'MISS',
+74 verbose headers   'x-cache-hits': '0',
+74 verbose headers   'x-timer': 'S1447901268.079288,VS0,VE48',
+74 verbose headers   vary: 'Accept' }
+75 silly get cb [ 304,
+75 silly get   { date: 'Thu, 19 Nov 2015 02:47:48 GMT',
+75 silly get     via: '1.1 varnish',
+75 silly get     'cache-control': 'max-age=60',
+75 silly get     etag: '"6L0ATKRK62R1BGT51Z77BI172"',
+75 silly get     age: '0',
+75 silly get     connection: 'keep-alive',
+75 silly get     'x-served-by': 'cache-dfw1828-DFW',
+75 silly get     'x-cache': 'MISS',
+75 silly get     'x-cache-hits': '0',
+75 silly get     'x-timer': 'S1447901268.079288,VS0,VE48',
+75 silly get     vary: 'Accept' } ]
+76 verbose etag https://registry.npmjs.org/add from cache
+77 verbose get saving add to C:\Users\FernandoÑañito\AppData\Roaming\npm-cache\registry.npmjs.org\add\.cache.json
+78 http 304 https://registry.npmjs.org/plugin
+79 verbose headers { date: 'Thu, 19 Nov 2015 02:47:48 GMT',
+79 verbose headers   via: '1.1 varnish',
+79 verbose headers   'cache-control': 'max-age=60',
+79 verbose headers   etag: '"6JILABSB2GRNEIW5S61CEDKVJ"',
+79 verbose headers   age: '0',
+79 verbose headers   connection: 'keep-alive',
+79 verbose headers   'x-served-by': 'cache-dfw1821-DFW',
+79 verbose headers   'x-cache': 'MISS',
+79 verbose headers   'x-cache-hits': '0',
+79 verbose headers   'x-timer': 'S1447901268.107906,VS0,VE93',
+79 verbose headers   vary: 'Accept' }
+80 silly get cb [ 304,
+80 silly get   { date: 'Thu, 19 Nov 2015 02:47:48 GMT',
+80 silly get     via: '1.1 varnish',
+80 silly get     'cache-control': 'max-age=60',
+80 silly get     etag: '"6JILABSB2GRNEIW5S61CEDKVJ"',
+80 silly get     age: '0',
+80 silly get     connection: 'keep-alive',
+80 silly get     'x-served-by': 'cache-dfw1821-DFW',
+80 silly get     'x-cache': 'MISS',
+80 silly get     'x-cache-hits': '0',
+80 silly get     'x-timer': 'S1447901268.107906,VS0,VE93',
+80 silly get     vary: 'Accept' } ]
+81 verbose etag https://registry.npmjs.org/plugin from cache
+82 verbose get saving plugin to C:\Users\FernandoÑañito\AppData\Roaming\npm-cache\registry.npmjs.org\plugin\.cache.json
+83 silly addNameRange number 2 { name: 'add', range: '*', hasData: true }
+84 silly addNameRange versions [ 'add',
+84 silly addNameRange   [ '1.0.0', '2.0.0', '2.0.1', '2.0.2', '2.0.4', '2.0.5', '2.0.6' ] ]
+85 silly addNamed add@2.0.6
+86 verbose addNamed "2.0.6" is a plain semver version for add
+87 silly addNameRange number 2 { name: 'plugin', range: '*', hasData: true }
+88 silly addNameRange versions [ 'plugin',
+88 silly addNameRange   [ '0.0.13',
+88 silly addNameRange     '0.0.14',
+88 silly addNameRange     '0.0.15',
+88 silly addNameRange     '0.1.0',
+88 silly addNameRange     '0.2.0',
+88 silly addNameRange     '0.2.1',
+88 silly addNameRange     '0.2.2',
+88 silly addNameRange     '0.2.3',
+88 silly addNameRange     '0.2.4',
+88 silly addNameRange     '0.2.5',
+88 silly addNameRange     '0.2.6',
+88 silly addNameRange     '0.2.7',
+88 silly addNameRange     '0.3.0',
+88 silly addNameRange     '0.3.1',
+88 silly addNameRange     '0.3.2',
+88 silly addNameRange     '0.3.3' ] ]
+89 silly addNamed plugin@0.3.3
+90 verbose addNamed "0.3.3" is a plain semver version for plugin
+91 silly cache afterAdd add@2.0.6
+92 verbose afterAdd C:\Users\FernandoÑañito\AppData\Roaming\npm-cache\add\2.0.6\package\package.json not in flight; writing
+93 silly cache afterAdd plugin@0.3.3
+94 verbose afterAdd C:\Users\FernandoÑañito\AppData\Roaming\npm-cache\plugin\0.3.3\package\package.json not in flight; writing
+95 verbose afterAdd C:\Users\FernandoÑañito\AppData\Roaming\npm-cache\add\2.0.6\package\package.json written
+96 verbose afterAdd C:\Users\FernandoÑañito\AppData\Roaming\npm-cache\plugin\0.3.3\package\package.json written
+97 http 404 https://registry.npmjs.org/org.apache.cordova.device-motion
+98 verbose headers { 'content-type': 'application/json',
+98 verbose headers   'cache-control': 'max-age=0',
+98 verbose headers   'content-length': '2',
+98 verbose headers   'accept-ranges': 'bytes',
+98 verbose headers   date: 'Thu, 19 Nov 2015 02:47:48 GMT',
+98 verbose headers   via: '1.1 varnish',
+98 verbose headers   age: '0',
+98 verbose headers   connection: 'keep-alive',
+98 verbose headers   'x-served-by': 'cache-dfw1820-DFW',
+98 verbose headers   'x-cache': 'MISS',
+98 verbose headers   'x-cache-hits': '0',
+98 verbose headers   'x-timer': 'S1447901268.101308,VS0,VE278' }
+99 silly get cb [ 404,
+99 silly get   { 'content-type': 'application/json',
+99 silly get     'cache-control': 'max-age=0',
+99 silly get     'content-length': '2',
+99 silly get     'accept-ranges': 'bytes',
+99 silly get     date: 'Thu, 19 Nov 2015 02:47:48 GMT',
+99 silly get     via: '1.1 varnish',
+99 silly get     age: '0',
+99 silly get     connection: 'keep-alive',
+99 silly get     'x-served-by': 'cache-dfw1820-DFW',
+99 silly get     'x-cache': 'MISS',
+99 silly get     'x-cache-hits': '0',
+99 silly get     'x-timer': 'S1447901268.101308,VS0,VE278' } ]
+100 http 304 https://registry.npmjs.org/cordova
+101 verbose headers { date: 'Thu, 19 Nov 2015 02:47:48 GMT',
+101 verbose headers   via: '1.1 varnish',
+101 verbose headers   'cache-control': 'max-age=60',
+101 verbose headers   etag: '"7MA3JYS4VL1SJT5UVXRKJ6BLC"',
+101 verbose headers   age: '0',
+101 verbose headers   connection: 'keep-alive',
+101 verbose headers   'x-served-by': 'cache-dfw1833-DFW',
+101 verbose headers   'x-cache': 'HIT',
+101 verbose headers   'x-cache-hits': '1',
+101 verbose headers   'x-timer': 'S1447901268.117874,VS0,VE270',
+101 verbose headers   vary: 'Accept' }
+102 silly get cb [ 304,
+102 silly get   { date: 'Thu, 19 Nov 2015 02:47:48 GMT',
+102 silly get     via: '1.1 varnish',
+102 silly get     'cache-control': 'max-age=60',
+102 silly get     etag: '"7MA3JYS4VL1SJT5UVXRKJ6BLC"',
+102 silly get     age: '0',
+102 silly get     connection: 'keep-alive',
+102 silly get     'x-served-by': 'cache-dfw1833-DFW',
+102 silly get     'x-cache': 'HIT',
+102 silly get     'x-cache-hits': '1',
+102 silly get     'x-timer': 'S1447901268.117874,VS0,VE270',
+102 silly get     vary: 'Accept' } ]
+103 verbose etag https://registry.npmjs.org/cordova from cache
+104 verbose get saving cordova to C:\Users\FernandoÑañito\AppData\Roaming\npm-cache\registry.npmjs.org\cordova\.cache.json
+105 silly addNameRange number 2 { name: 'cordova', range: '*', hasData: true }
+106 silly addNameRange versions [ 'cordova',
+106 silly addNameRange   [ '0.0.1',
+106 silly addNameRange     '0.0.2',
+106 silly addNameRange     '0.0.3',
+106 silly addNameRange     '0.0.4',
+106 silly addNameRange     '0.0.5',
+106 silly addNameRange     '0.0.6',
+106 silly addNameRange     '0.0.7',
+106 silly addNameRange     '0.0.8',
+106 silly addNameRange     '0.0.9',
+106 silly addNameRange     '0.1.0',
+106 silly addNameRange     '0.1.1',
+106 silly addNameRange     '0.1.2',
+106 silly addNameRange     '0.1.3',
+106 silly addNameRange     '0.1.4',
+106 silly addNameRange     '0.1.5',
+106 silly addNameRange     '0.1.6',
+106 silly addNameRange     '0.1.7',
+106 silly addNameRange     '0.1.8',
+106 silly addNameRange     '0.1.9',
+106 silly addNameRange     '0.1.10',
+106 silly addNameRange     '0.1.11',
+106 silly addNameRange     '0.1.12',
+106 silly addNameRange     '0.1.13',
+106 silly addNameRange     '0.1.14',
+106 silly addNameRange     '2.2.0',
+106 silly addNameRange     '2.3.0',
+106 silly addNameRange     '2.3.1',
+106 silly addNameRange     '2.3.2',
+106 silly addNameRange     '2.3.3',
+106 silly addNameRange     '2.3.5',
+106 silly addNameRange     '2.3.6',
+106 silly addNameRange     '2.4.0',
+106 silly addNameRange     '2.4.1',
+106 silly addNameRange     '2.4.2',
+106 silly addNameRange     '2.4.3',
+106 silly addNameRange     '2.4.4',
+106 silly addNameRange     '2.4.5',
+106 silly addNameRange     '2.4.6',
+106 silly addNameRange     '2.4.7',
+106 silly addNameRange     '2.4.8',
+106 silly addNameRange     '2.4.9',
+106 silly addNameRange     '2.4.10',
+106 silly addNameRange     '2.5.0',
+106 silly addNameRange     '2.5.2',
+106 silly addNameRange     '2.5.3',
+106 silly addNameRange     '2.5.4',
+106 silly addNameRange     '2.5.5',
+106 silly addNameRange     '2.6.0',
+106 silly addNameRange     '2.6.1',
+106 silly addNameRange     '2.6.2',
+106 silly addNameRange     '2.7.0-rc.1',
+106 silly addNameRange     '2.7.1-rc.1',
+106 silly addNameRange     '2.7.2',
+106 silly addNameRange     '2.7.3',
+106 silly addNameRange     '2.7.4',
+106 silly addNameRange     '2.8.0',
+106 silly addNameRange     '2.8.1',
+106 silly addNameRange     '2.8.2',
+106 silly addNameRange     '2.8.3',
+106 silly addNameRange     '2.8.4',
+106 silly addNameRange     '2.8.5',
+106 silly addNameRange     '2.8.6',
+106 silly addNameRange     '2.8.7',
+106 silly addNameRange     '2.8.8',
+106 silly addNameRange     '2.8.9',
+106 silly addNameRange     '2.8.10',
+106 silly addNameRange     '2.8.11',
+106 silly addNameRange     '2.8.12',
+106 silly addNameRange     '2.8.13',
+106 silly addNameRange     '2.8.14',
+106 silly addNameRange     '2.8.15',
+106 silly addNameRange     '2.8.16',
+106 silly addNameRange     '2.8.17',
+106 silly addNameRange     '2.8.18',
+106 silly addNameRange     '2.8.19',
+106 silly addNameRange     '2.8.20',
+106 silly addNameRange     '2.8.21',
+106 silly addNameRange     '2.8.22',
+106 silly addNameRange     '2.8.23',
+106 silly addNameRange     '2.8.24',
+106 silly addNameRange     '2.8.25',
+106 silly addNameRange     '2.9.0',
+106 silly addNameRange     '2.9.1',
+106 silly addNameRange     '2.9.2',
+106 silly addNameRange     '2.9.3',
+106 silly addNameRange     '2.9.4',
+106 silly addNameRange     '2.9.5',
+106 silly addNameRange     '2.9.6',
+106 silly addNameRange     '2.9.7',
+106 silly addNameRange     '3.0.0-rc1',
+106 silly addNameRange     '3.0.0-rc1-1',
+106 silly addNameRange     '3.0.0-rc1-3',
+106 silly addNameRange     '3.0.0',
+106 silly addNameRange     '3.0.1',
+106 silly addNameRange     '3.0.2',
+106 silly addNameRange     '3.0.3',
+106 silly addNameRange     '3.0.4',
+106 silly addNameRange     '3.0.5',
+106 silly addNameRange     '3.0.6',
+106 silly addNameRange     '3.0.7',
+106 silly addNameRange     '3.0.8',
+106 silly addNameRange     '3.0.9',
+106 silly addNameRange     '3.0.10',
+106 silly addNameRange     '3.1.0-0.1.0',
+106 silly addNameRange     '3.1.0-0.2.0',
+106 silly addNameRange     '3.2.0-rc.1',
+106 silly addNameRange     '3.2.0-0.1.0',
+106 silly addNameRange     '3.2.0-0.2.0',
+106 silly addNameRange     '3.2.0-0.3.0',
+106 silly addNameRange     '3.2.0-0.4.0',
+106 silly addNameRange     '3.3.0-rc.1',
+106 silly addNameRange     '3.3.0-0.1.1',
+106 silly addNameRange     '3.3.1-0.1.2',
+106 silly addNameRange     '2.9.0-rc1',
+106 silly addNameRange     '3.3.1-0.3.0',
+106 silly addNameRange     '3.3.1-0.3.1',
+106 silly addNameRange     '3.3.1-0.4.1',
+106 silly addNameRange     '3.3.1-0.4.2',
+106 silly addNameRange     '3.4.0-0.1.0',
+106 silly addNameRange     '3.4.0-0.1.1',
+106 silly addNameRange     '3.4.0-0.1.2',
+106 silly addNameRange     '3.4.0-0.1.3',
+106 silly addNameRange     '0.0.0-fake',
+106 silly addNameRange     '3.4.1-0.1.0',
+106 silly addNameRange     '3.5.0-0.2.0',
+106 silly addNameRange     '3.5.0-0.2.1',
+106 silly addNameRange     '3.5.0-0.2.2',
+106 silly addNameRange     '3.5.0-0.2.3',
+106 silly addNameRange     '3.5.0-0.2.4',
+106 silly addNameRange     '3.5.0-0.2.6',
+106 silly addNameRange     '3.5.0-0.2.7',
+106 silly addNameRange     '3.6.0-0.2.8',
+106 silly addNameRange     '3.6.0-0.2.9',
+106 silly addNameRange     '3.6.1-0.2.10',
+106 silly addNameRange     '3.6.3-0.2.11',
+106 silly addNameRange     '3.6.3-0.2.12',
+106 silly addNameRange     '3.6.3-0.2.13',
+106 silly addNameRange     '4.0.0',
+106 silly addNameRange     '4.0.1',
+106 silly addNameRange     '4.1.0',
+106 silly addNameRange     '4.1.1',
+106 silly addNameRange     '4.1.2',
+106 silly addNameRange     '4.1.3-nightly.2014.10.21',
+106 silly addNameRange     '4.2.0',
+106 silly addNameRange     '4.3.0',
+106 silly addNameRange     '5.0.0',
+106 silly addNameRange     '4.3.1',
+106 silly addNameRange     '5.1.1',
+106 silly addNameRange     '5.2.0',
+106 silly addNameRange     '5.3.1',
+106 silly addNameRange     '5.3.3',
+106 silly addNameRange     '5.4.0' ] ]
+107 silly addNamed cordova@5.4.0
+108 verbose addNamed "5.4.0" is a plain semver version for cordova
+109 silly cache afterAdd cordova@5.4.0
+110 verbose afterAdd C:\Users\FernandoÑañito\AppData\Roaming\npm-cache\cordova\5.4.0\package\package.json not in flight; writing
+111 verbose afterAdd C:\Users\FernandoÑañito\AppData\Roaming\npm-cache\cordova\5.4.0\package\package.json written
+112 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/org.apache.cordova.device-motion
+112 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+112 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:242:14)
+112 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+112 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:198:22)
+112 verbose stack     at emitTwo (events.js:87:13)
+112 verbose stack     at Request.emit (events.js:172:7)
+112 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1063:14)
+112 verbose stack     at emitOne (events.js:82:20)
+112 verbose stack     at Request.emit (events.js:169:7)
+112 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1009:12)
+113 verbose statusCode 404
+114 verbose pkgid org.apache.cordova.device-motion
+115 verbose cwd F:\Programacion\Ionic\motion
+116 error Windows_NT 10.0.10240
+117 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "cordova" "plugin" "add" "org.apache.cordova.device-motion"
+118 error node v4.2.2
+119 error npm  v2.14.7
+120 error code E404
+121 error 404 Registry returned 404 for GET on https://registry.npmjs.org/org.apache.cordova.device-motion
+121 error 404
+121 error 404 'org.apache.cordova.device-motion' is not in the npm registry.
+121 error 404 You should bug the author to publish it (or use the name yourself!)
+121 error 404 It was specified as a dependency of 'motion'
+121 error 404
+121 error 404 Note that you can also install from a
+121 error 404 tarball, folder, http url, or git url.
+122 verbose exit [ 1, true ]

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="MiNombre">
+
+    <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">Ionic Blank Starter</h1>
+      </ion-header-bar>
+
+      <ion-content>
+      <h2>acelerometro</h2>
+      <script type="text/javascript" charset="utf-8">
+
+          // The watch id references the current `watchAcceleration`
+          var watchID = null;
+
+          // Wait for Cordova to load
+          //
+          document.addEventListener("deviceready", onDeviceReady, false);
+
+          // Cordova is ready
+          //
+          function onDeviceReady() {
+              startWatch();
+          }
+
+          // Start watching the acceleration
+          //
+          function startWatch() {
+
+              // Update acceleration every 3 seconds
+              var options = { frequency: 2000 };
+
+              watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, options);
+          }
+
+          // Stop watching the acceleration
+          //
+          function stopWatch() {
+              if (watchID) {
+                  navigator.accelerometer.clearWatch(watchID);
+                  watchID = null;
+              }
+          }
+
+          // onSuccess: Get a snapshot of the current acceleration
+          //
+          function onSuccess(acceleration) {
+              var element = document.getElementById('accelerometer');
+              element.innerHTML = 'Acceleration X: ' + acceleration.x + '<br />' +
+                                  'Acceleration Y: ' + acceleration.y + '<br />' +
+                                  'Acceleration Z: ' + acceleration.z + '<br />' + 
+                                  'Timestamp: '      + acceleration.timestamp + '<br />';
+          }
+
+          // onError: Failed to get the acceleration
+          //
+          function onError() {
+              alert('onError!');
+          }
+
+    </script>
+
+    <div id="accelerometer">Esperando acelerometro...</div>
+    <button onclick="stopWatch();">Detener acelerometro</button>
+
+    <h2>Geolocalizacion</h2>
+    <script type="text/javascript" charset="utf-8">
+
+
+        module.controller('GeoCtrl', function($cordovaGeolocation) {
+
+  var posOptions = {timeout: 5000, enableHighAccuracy: false};
+  $cordovaGeolocation
+    .getCurrentPosition(posOptions)
+    .then(function (position) {
+      var lat  = position.coords.latitude
+      var long = position.coords.longitude
+    
+    }, function(err) {
+      // error
+    });
+
+
+  var watchOptions = {
+    timeout : 3000,
+    enableHighAccuracy: false // may cause errors if true
+  };
+
+  var watch = $cordovaGeolocation.watchPosition(watchOptions);
+  watch.then(
+    null,
+    function(err) {
+      // error
+    },
+    function onSuccess(position) {
+     // var lat  = position.coords.latitude
+     // var long = position.coords.longitude
+      var element = document.getElementById('geolocalizador');
+              element.innerHTML = 'Acceleration X: ' + position.coords.latitude + '<br />' +
+                                  'Acceleration Y: ' + position.coords.longitude + '<br />';
+  });
+
+  
+
+
+
+  watch.clearWatch();
+  // OR
+  $cordovaGeolocation.clearWatch(watch)
+    .then(function(result) {
+      // success
+      }, function (error) {
+      // error
+    });
+});
+
+        </script>
+
+    <div id="geolocalizador">Esperando geolocalizacion...</div>
+
+
+      </ion-content>
+    </ion-pane>
+  </body>
+</html>
+
+
